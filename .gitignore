@@ -1,0 +1,46 @@
+# C compilation artifacts
+*.o
+*.a
+*.so
+
+# Generated executables
+/app/min_inc
+/experiments/instance_generation/make_random
+/experiments/instance_generation/make_euclidean
+/experiments/instance_generation/perturbedUM
+
+# Editor files
+.vscode/
+.idea/
+*~
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs and temporary outputs
+*.log
+*.output
+*.tmp
+
+# Debug files and old files
+/legacy/
+obsolete/
+old/
+veryold/
+
+# Large generated datasets
+/data/*
+!/data/sample/
+!/data/sample/**
+
+# Raw experimental results
+/results/raw/
+/results/extracted/old/
+
+/experiments/gurobi/result_gurobi/
+/experiments/gurobi/*.log
+/experiments/gurobi/*.out
+/experiments/gurobi/*.lp
+/experiments/gurobi/*.sol
