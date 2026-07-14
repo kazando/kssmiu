@@ -94,10 +94,10 @@ perturbedUM
 The main program has the following form:
 
 ```bash
-./app/min_inc [p1|p2] <input file> <k> [tree output file]
+./app/min_inc [l1|l2] <input file> <k> [tree output file]
 ```
 
-The argument `[p1|p2]` selects the objective parameter. If it is omitted, `p1`
+The argument `[11|l2]` selects the objective parameter. If it is omitted, `l1`
 is used by default.
 
 Examples:
@@ -107,18 +107,18 @@ Examples:
 ```
 
 ```bash
-./app/min_inc p1 data/sample/euclid100_1.phylip 10
+./app/min_inc l1 data/sample/euclid100_1.phylip 10
 ```
 
 ```bash
-./app/min_inc p2 data/sample/euclid100_1.phylip 10
+./app/min_inc l2 data/sample/euclid100_1.phylip 10
 ```
 
 To also output the resulting tree in Newick format, provide an output file as
 the final argument:
 
 ```bash
-./app/min_inc p1 data/sample/euclid100_1.phylip 10 output_tree.nwk
+./app/min_inc l1 data/sample/euclid100_1.phylip 10 output_tree.nwk
 ```
 
 ## Output format
@@ -207,7 +207,7 @@ Example:
 
 ```bash
 python3 experiments/analysis/extract.py \
-  results/raw/kss2phylip-p1-euc.txt \
+  results/raw/kss2phylip-l1-euc.txt \
   input k totaltime obj impr_rate
 ```
 
@@ -277,7 +277,7 @@ The Gnuplot scripts in `results/figure/` can be used to regenerate the PDF
 figures, for example:
 
 ```bash
-gnuplot results/figure/fig1_euclidean_improvement_p1.gp
+gnuplot results/figure/fig1_euclidean_improvement_l1.gp
 ```
 
 ## Optional Gurobi scripts

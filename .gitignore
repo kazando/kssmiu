@@ -36,8 +36,8 @@ veryold/
 !/data/sample/**
 
 # Raw experimental results
-/results/raw/
-/results/extracted/old/
+#/results/raw/
+#/results/extracted/
 
 /experiments/gurobi/result_gurobi/
 /experiments/gurobi/*.log

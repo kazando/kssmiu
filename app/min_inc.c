@@ -13,10 +13,10 @@ static int parse_mode(const char *arg) {
     if (arg == NULL) {
         return 0;
     }
-    if (strcmp(arg, "p1") == 0 || strcmp(arg, "1") == 0) {
+    if (strcmp(arg, "l1") == 0 || strcmp(arg, "1") == 0) {
         return 1;
     }
-    if (strcmp(arg, "p2") == 0 || strcmp(arg, "2") == 0) {
+    if (strcmp(arg, "l2") == 0 || strcmp(arg, "2") == 0) {
         return 2;
     }
     return 0;
@@ -36,21 +36,21 @@ int main(int argc, char *argv[]) {
     int write_tree = 0;
 
     if (argc < 3 || argc > 5) {
-        printf("Usage: %s [p1|p2] <input file> <k> [tree output file]\n", argv[0]);
+        printf("Usage: %s [l1|l2] <input file> <k> [tree output file]\n", argv[0]);
         printf("       %s <input file> <k> [tree output file]\n", argv[0]);
         return 0;
     }
 
     if (parse_mode(argv[1]) != 0) {
         if (argc < 4) {
-            printf("Usage: %s [p1|p2] <input file> <k> [tree output file]\n", argv[0]);
+            printf("Usage: %s [l1|l2] <input file> <k> [tree output file]\n", argv[0]);
             return 0;
         }
         mode = parse_mode(argv[1]);
         mode_arg_index = 2;
     } else {
         if (argc > 4) {
-            printf("Usage: %s [p1|p2] <input file> <k> [tree output file]\n", argv[0]);
+            printf("Usage: %s [l1|l2] <input file> <k> [tree output file]\n", argv[0]);
             return 0;
         }
         mode = 1;

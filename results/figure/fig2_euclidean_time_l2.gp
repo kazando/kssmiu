@@ -1,5 +1,5 @@
 set terminal pdfcairo enhanced color font "Helvetica,10" size 3.4in,2.7in
-set output "fig2_euclidean_time_p1.pdf"
+set output "fig2_euclidean_time_l2.pdf"
 
 set xlabel "Neighborhood parameter k"
 set ylabel "Average total running time (s)"
@@ -10,6 +10,6 @@ set key left top
 set grid
 
 plot \
-    "euclidean_time_p1.dat" using 1:2 with linespoints lw 2 pt 7 title "n = 100", \
-    "euclidean_time_p1.dat" using 1:4 with linespoints lw 2 pt 5 title "n = 250", \
-    "euclidean_time_p1.dat" using 1:6 with linespoints lw 2 pt 9 title "n = 500"
+    "euclidean_time_l2.dat" using 1:2 with linespoints lw 2 pt 7 title "n = 100", \
+    "euclidean_time_l2.dat" using 1:4 with linespoints lw 2 pt 5 title "n = 250", \
+    "euclidean_time_l2.dat" using 1:6 with linespoints lw 2 pt 9 title "n = 500"

@@ -26,8 +26,8 @@ do
 		a=1	
 		while [ $a -le 20 ]
 		do
-			echo "doing: ${PROJECT_ROOT}/app/min_inc p${1} ${PROJECT_ROOT}/data/${2}/${2}${n}_${a}.phylip $k" 1>&2
-			"$PROJECT_ROOT/app/min_inc" "p${1}" "$PROJECT_ROOT/data/${2}/${2}${n}_${a}.phylip" "$k"
+			echo "doing: ${PROJECT_ROOT}/app/min_inc l${1} ${PROJECT_ROOT}/data/${2}/${2}${n}_${a}.phylip $k" 1>&2
+			"$PROJECT_ROOT/app/min_inc" "l${1}" "$PROJECT_ROOT/data/${2}/${2}${n}_${a}.phylip" "$k"
 			a=$((a+1))
 		done
 	done
