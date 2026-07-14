@@ -153,8 +153,9 @@ This repository contains only small sample instances under:
 data/sample/
 ```
 
-They are intended for checking that the code builds and runs correctly. Larger
-experimental datasets are not included in the main repository.
+They are intended for checking that the code builds and runs correctly. 
+The full input dataset used in the computational experiments is available as
+`data-full.tar.gz` from the GitHub Releases page.
 
 The sample files are:
 
